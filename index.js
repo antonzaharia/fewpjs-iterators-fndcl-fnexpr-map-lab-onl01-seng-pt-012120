@@ -18,3 +18,9 @@ const titleCased = tutorials.map(function(tutorial){
 
   });
 });
+
+function firstUpp(word) {
+  lArray = word.split("");
+  firstLetter = lArray[0].toUpperCase();
+  lArray.splice(0, 1, firstLetter);
+};
