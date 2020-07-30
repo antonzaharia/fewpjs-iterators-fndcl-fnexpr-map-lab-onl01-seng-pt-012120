@@ -13,7 +13,7 @@ const tutorials = [
 
 const titleCased = () => {
   let newTitles = tutorials.map(function(tutorial){
-    wArray = tutorial.split(" ").map(word => firstUp(word));
+    let wArray = tutorial.split(" ").map(word => firstUp(word));
     return wArray.join(" ");
   });
   return newTitles;
