@@ -16,5 +16,5 @@ const titleCased = tutotials.map(function(tutorial){
     let lettersArray = word.split("")
     letterArray[0].toUpperCase;
 
-  }
+  });
 });
