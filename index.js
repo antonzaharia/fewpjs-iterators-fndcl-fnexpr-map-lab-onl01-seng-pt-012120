@@ -12,15 +12,14 @@ const tutorials = [
 ];
 
 const titleCased = tutorials.map(function(tutorial){
-  tutorial.split(" ").map(function(word){
-    let letterArray = word.split("")
-    letterArray[0].toUpperCase;
-
-  });
+  wArray = tutorial.split(" ").map(word => firstUp(word));
+  wArray.join("");
+  return wArray;
 });
 
 function firstUp(word) {
   lArray = word.split("");
   firstLetter = lArray[0].toUpperCase();
   lArray.splice(0, 1, firstLetter);
+  return lArray.join("");
 };
