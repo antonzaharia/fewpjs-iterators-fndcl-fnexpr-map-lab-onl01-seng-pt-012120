@@ -20,7 +20,7 @@ const titleCased = () => {
 };
 
 function firstUp(word) {
-  lArray = word.split("");
+  let lArray = word.split("");
   firstLetter = lArray[0].toUpperCase();
   lArray.splice(0, 1, firstLetter);
   return lArray.join("");
